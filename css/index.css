@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+body nav {
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #fff;
+}
+
+body nav .mui-input-clear {
+  height: 26px;
+}
+
+body nav .mui-placeholder {
+  height: 26px !important;
+  line-height: 26px !important;
+}
+
+body .container {
+  overflow: scroll;
+  padding: 45px 0 50px 0;
+  height: 100%;
+}
+
+body .container .catitems {
+  height: 106px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .catitems div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 25%;
+}
+
+body .container .catitems div a {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .catitems div a img {
+  width: 75%;
+}
+
+body footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #ff9400;
+}
+/*# sourceMappingURL=index.css.map */

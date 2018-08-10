@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <!-- 固定导航栏部分开始 -->
+  <nav>
+    <div class="mui-input-row mui-search">
+      <input type="search" class="mui-input-clear" placeholder="">
+    </div>
+  </nav>
+  <!-- 固定导航栏部分结束 -->
+
+  <!-- 主页面部分开始 -->
+  <div class="container">
+    <!-- 轮播图部分开始 -->
+    <div class="mui-slider">
+      <div class="mui-slider-group mui-slider-loop">
+        <!-- 模板替换 -->
+      </div>
+      <div class="mui-slider-indicator">
+        <div class="mui-indicator mui-active"></div>
+        <div class="mui-indicator"></div>
+        <div class="mui-indicator"></div>
+      </div>
+    </div>
+    <!-- 轮播图部分结束 -->
+
+    <!-- 分类功能部分开始 -->
+    <div class="catitems">
+      <!-- 模板替换 -->
+    </div>
+    <!-- 分类功能部分结束 -->
+  </div>
+  <!-- 主页面部分结束 -->
+
+  <!-- 底部固定部份开始 -->
+  <footer></footer>
+  <!-- 底部固定部份结束 -->
+</body>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/index.js"></script>
+<!-- 轮播图模板 -->
+<script type="text/template" id="slide_template">
+  <!--轮播图容器-->
+  <div class="mui-slider-item mui-slider-item-duplicate">
+    <a href="{{res[res.length-1].navigator_url}}">
+      <img src="{{res[res.length-1].image_src}}" alt="">
+    </a>
+  </div>
+  <!--轮播图容器-->
+  {{each res val key}}
+  <!--轮播图容器-->
+  <div class="mui-slider-item">
+    <a href="{{val.navigator_url}}">
+      <img src="{{val.image_src}}" alt="">
+    </a>
+  </div>
+  <!--轮播图容器-->
+  {{/each}}
+  <!--轮播图容器-->
+  <div class="mui-slider-item mui-slider-item-duplicate">
+    <a href="{{res[0].navigator_url}}">
+      <img src="{{res[0].image_src}}" alt="">
+    </a>
+  </div>
+  <!--轮播图容器-->
+</script>
+<!-- 分类菜单模板 -->
+<script type="text/template" id="catitems_template">
+  {{each res val key}}
+  <div>
+    <a href="{{val.navigator_url}}">
+      <img src="{{val.image_src}}" alt="">
+    </a>
+  </div>
+  {{/each}}
+</script>
+
+</html>
