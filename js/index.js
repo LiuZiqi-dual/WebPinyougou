@@ -4,7 +4,7 @@ $(function () {
     url: "http://api.pyg.ak48.xyz/api/public/v1/home/swiperdata",
     dataType: "json",
     success: function (res) {
-      console.log(res.data);
+      // console.log(res.data);
       $('.mui-slider-group').html(template(
         'slide_template', {
           res: res.data
@@ -20,10 +20,21 @@ $(function () {
 });
 $.get("http://api.pyg.ak48.xyz/api/public/v1/home/catitems",
   function (res) {
-    console.log(res);
+    // console.log(res);
     $('.catitems').html(
       template(
         'catitems_template',{res:res.data}
+      )
+    );
+  },
+  "json"
+);
+$.get("http://api.pyg.ak48.xyz/api/public/v1/home/goodslist", 
+  function (res) {
+    console.log(res.data);
+    $('.goodlist').html(
+      template(
+        'goodlist_template',{res:res.data}
       )
     );
   },

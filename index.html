@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>品优购，最大的购物网站</title>
   <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="/lib/fontawesome/css/font-awesome.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -40,11 +41,42 @@
       <!-- 模板替换 -->
     </div>
     <!-- 分类功能部分结束 -->
+
+    <!-- 商品列表部分开始 -->
+    <div class="goodlist">
+      <!-- 模板替换 -->
+    </div>
+    <!-- 商品列表部分结束 -->
   </div>
   <!-- 主页面部分结束 -->
 
   <!-- 底部固定部份开始 -->
-  <footer></footer>
+  <footer>
+    <div class="feature">
+      <a href="javascript:;">
+        <i class="fa fa-home"></i>
+        <span>首页</span>
+      </a>
+    </div>
+    <div class="feature">
+      <a href="javascript:;">
+        <i class="fa fa-list"></i>
+        <span>分类</span>
+      </a>
+    </div>
+    <div class="feature">
+      <a href="javascript:;">
+        <i class="fa fa-shopping-cart"></i>
+        <span>购物车</span>
+      </a>
+    </div>
+    <div class="feature">
+      <a href="javascript:;">
+        <i class="fa fa-user-circle"></i>
+        <span>我的</span>
+      </a>
+    </div>
+  </footer>
   <!-- 底部固定部份结束 -->
 </body>
 <script src="./lib/zepto/zepto.js"></script>
@@ -81,11 +113,33 @@
 <script type="text/template" id="catitems_template">
   {{each res val key}}
   <div>
-    <a href="{{val.navigator_url}}">
+    <a href="{{val.navigator_url}}.html">
       <img src="{{val.image_src}}" alt="">
     </a>
   </div>
   {{/each}}
 </script>
+<!-- 商品列表模板 -->
+<script type="text/template" id="goodlist_template">
+  {{each res val key}}
+  <div class="section">
+    <div class="group_img">
+      <img src="{{val.group_img}}" alt="">
+    </div>
+    {{each val.goods value index}}
+    <div class="goods">
+      <a href="javascript:;">
+        <img src="{{value.goods_small_logo}}" alt="">
+        <p>{{value.goods_name}}</p>
+        <h5>￥{{value.goods_price}}</h5>
+        <button type="button" class="mui-btn mui-btn-primary mui-btn-outlined">找相似</button>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+  {{/each}}
+</script>
+
+
 
 </html>

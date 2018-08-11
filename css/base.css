@@ -5,3 +5,111 @@
           box-sizing: border-box;
 }
 /*# sourceMappingURL=base.css.map */
+html {
+  height: 100%;
+}
+
+body {
+  /* overflow: hidden; */
+  height: 100%;
+}
+
+body nav {
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+
+body nav .mui-input-clear {
+  height: 26px;
+}
+
+body nav .mui-placeholder {
+  height: 26px !important;
+  line-height: 26px !important;
+}
+
+
+body footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .feature {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 25%;
+  height: 100%;
+}
+
+body footer .feature a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  color: #000;
+}
+
+body footer .feature a i {
+  font-size: 22px;
+}
+
+/*清除浮动*/
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0;
+  line-height: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.al {
+  text-align: left;
+}
+
+.ac {
+  text-align: center;
+}
+
+.ar {
+  text-align: right;
+}
+
+.pr {
+  position: relative;
+}
