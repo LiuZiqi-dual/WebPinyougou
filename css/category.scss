@@ -1,23 +1,34 @@
 // 1REM = 10px
-html {font-size: 10px; /*10 ÷ 16 × 100% = 62.5%*/}
-.container{
+html {
+  font-size: 100px;
+  /*10 ÷ 16 × 100% = 62.5%*/
+}
+
+.container {
   overflow: hidden;
   height: 100%;
   padding: 45px 0 50px 0;
   display: flex;
-  .cat_name{
-    font-size: 1.6rem;
+  .cat_name {
+    font-size: .24rem;
     overflow: scroll;
     height: 100%;
-    width: 6rem;
-    background-color: #0094ff;
+    // background-color: #0094ff;
+    ul {
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1.56rem;
+        height: 0.6rem;
+      }
+    }
   }
-  .cat_children{
-    font-size: 1.6rem;
+  .cat_children {
+    font-size: .24rem;
     flex: 1;
     overflow: scroll;
-    height: 100%;
-    // width: 80px;
+    height: 100%; // width: 80px;
     background-color: #ff9400;
   }
 }
