@@ -4,6 +4,11 @@ html {
   /*10 ÷ 16 × 100% = 62.5%*/
 }
 
+.active_nav {
+  border-left: 2px solid #0094ff;
+  background-color: #fff;
+}
+
 .container {
   overflow: hidden;
   height: 100%;
@@ -17,6 +22,7 @@ html {
   font-size: .24rem;
   overflow: scroll;
   height: 100%;
+  background-color: #E5E5E5;
 }
 
 .container .cat_name ul li {
@@ -34,12 +40,74 @@ html {
 }
 
 .container .cat_children {
-  font-size: .24rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   overflow: scroll;
   height: 100%;
-  background-color: #ff9400;
+  background-color: #fff;
+}
+
+.container .cat_children .cat_title {
+  height: 0.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 .2rem;
+  background-color: #E5E5E5;
+}
+
+.container .cat_children .cat_title h5 {
+  margin: 0;
+  line-height: 0.4rem;
+  font-size: .22rem !important;
+  color: #111;
+  font-weight: 900;
+}
+
+.container .cat_children .cat_title i {
+  line-height: 0.35rem;
+}
+
+.container .cat_children .cat_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .cat_children .cat_detail .cat_list {
+  width: 1.21rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: .01rem solid #111;
+  border-right: .01rem solid #111;
+}
+
+.container .cat_children .cat_detail .cat_list img {
+  width: 99%;
+}
+
+.container .cat_children .cat_detail .cat_list p {
+  text-align: center;
+}
+
+.container .cat_children .cat_detail .cat_list:nth-child(4n) {
+  border-right: none;
 }
 /*# sourceMappingURL=category.css.map */

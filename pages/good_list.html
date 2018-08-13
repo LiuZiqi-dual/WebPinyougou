@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>商品列表页面</title>
+  <link rel="stylesheet" href="/lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="/lib/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/good_list.css">
+</head>
+
+<body>
+  <!-- 搜索导航栏部分 -->
+  <header>
+    <i class="fa fa-refresh"></i>
+    <input type="text" class="search_box">
+    <a href="javascript:;">搜索</a>
+  </header>
+  <!-- 搜索导航栏部分 -->
+
+  <!-- 筛选导航栏部分 -->
+  <div class="screen">
+    <div>综合</div>
+    <div>销量</div>
+    <div>促销</div>
+  </div>
+  <!-- 筛选导航栏部分 -->
+
+  <!-- 商品列表部分 -->
+  <div class="container">
+    努力加载中...
+  </div>
+  <!-- 商品列表部分 -->
+
+  <!-- 底部固定部份开始 -->
+  <footer>
+    <div class="feature">
+      <a href="javascript:;">
+        <i class="fa fa-home"></i>
+        <span>首页</span>
+      </a>
+    </div>
+    <div class="feature">
+      <a href="javascript:;">
+        <i class="fa fa-list"></i>
+        <span>分类</span>
+      </a>
+    </div>
+    <div class="feature">
+      <a href="javascript:;">
+        <i class="fa fa-shopping-cart"></i>
+        <span>购物车</span>
+      </a>
+    </div>
+    <div class="feature">
+      <a href="javascript:;">
+        <i class="fa fa-user-circle"></i>
+        <span>我的</span>
+      </a>
+    </div>
+  </footer>
+  <!-- 底部固定部份结束 -->
+</body>
+<script src="../lib/zepto/zepto.js"></script>
+<script src="../lib/mui/js/mui.min.js"></script>
+<script src="../lib/arttemplate/template-web.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/good_list.js"></script>
+<script src="../lib/iscroll/iscroll.js"></script>
+<!-- 商品列表部分模板 -->
+<script type="text/template" id="good_list_template">
+{{each res val key}}
+  <div class="good_detail">
+    <div class="good_image">
+        <img src="{{val.goods_small_logo}}" alt="图片加载中...">
+    </div>
+    
+    <div class="good_price">
+      <p>{{val.goods_name}}</p>
+      <h4>￥{{val.goods_price}}</h4>
+    </div>
+  </div>
+{{/each}}
+</script>
+<!-- 商品列表部分模板 -->
+</html>

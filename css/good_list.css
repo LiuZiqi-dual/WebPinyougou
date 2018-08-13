@@ -1,0 +1,125 @@
+@charset "UTF-8";
+html {
+  font-size: 100px;
+}
+
+body {
+  /* 搜索导航栏部分 */
+  /* 搜索导航栏部分 */
+  /* 筛选导航栏部分 */
+  /* 筛选导航栏部分 */
+  /* 商品列表部分 */
+  /* 商品列表部分 */
+}
+
+body header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  height: 0.55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EFEFF4;
+}
+
+body header i {
+  font-size: 0.3rem !important;
+  color: #007aff;
+  cursor: pointer;
+}
+
+body header .search_box {
+  padding: 0;
+  padding-left: .1rem;
+  margin: 0;
+  width: 5rem;
+  height: 100%;
+  border-radius: .05rem;
+  border: none;
+}
+
+body header a {
+  font-size: 0.22rem;
+}
+
+body .screen {
+  position: fixed;
+  top: .55rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0.45rem;
+  background-color: #F7F7F7;
+  margin-bottom: 2px;
+}
+
+body .screen div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #007aff;
+}
+
+body .container {
+  padding-top: 1.1rem;
+  padding-bottom: 50px;
+}
+
+body .container .good_detail {
+  padding: .1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 6px;
+}
+
+body .container .good_detail .good_image {
+  width: 2rem;
+}
+
+body .container .good_detail .good_image img {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 2rem;
+}
+
+body .container .good_detail .good_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: .1rem;
+}
+
+body .container .good_detail .good_price h4 {
+  color: #d30404;
+}
+/*# sourceMappingURL=good_list.css.map */
