@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  // overflow: hidden;
   /* 搜索导航栏部分 */
   header {
     position: fixed;
@@ -29,6 +30,7 @@ body {
       border: none;
     }
     a {
+      text-decoration: none;
       font-size: 0.22rem;
     }
   }
@@ -43,6 +45,7 @@ body {
     background-color: #F7F7F7;
     margin-bottom: 2px;
     div {
+      font-size: .26rem;
       display: flex;
       align-items: center;
       height: 100%;
@@ -53,31 +56,43 @@ body {
   }
   /* 筛选导航栏部分 */
   /* 商品列表部分 */
-  .container {
-    padding-top: 1.1rem;
+  // .main{
+  //   position: relative;
+  //   ul{
+  //     position: relative;
+  //   }
+  // }
+  .pyg_view {
+    // position: relative;
+    margin-top: 1.1rem;
     padding-bottom: 50px;
+    overflow: hidden;
     .good_detail {
       padding: .1rem;
       display: flex;
       background-color: #fff;
       margin-bottom: 6px;
-      .good_image{
+      .good_image {
         width: 2rem;
         img {
+          font-size: .16rem;
           display: block;
           flex: 1;
           width: 2rem;
         }
       }
-
       .good_price {
         display: flex;
         width: 100%;
         flex-direction: column;
         justify-content: space-between;
         margin-left: .1rem;
-        h4{
-          color:#d30404
+        p{
+          font-size: .16rem;
+        }
+        h4 {
+          font-size: .28rem;
+          color: #d30404
         }
       }
     }
